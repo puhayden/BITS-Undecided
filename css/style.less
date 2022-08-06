@@ -1,0 +1,109 @@
+// @import url('https://at.alicdn.com/t/c/font_3571740_299shyu7yzp.css');
+
+@import url('../font/iconfont.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ff8b8b;
+}
+
+
+.one,
+.two {
+  background-color: #000000;
+  color: #fff;
+}
+
+.one {
+  height: 50px;
+  border-bottom: .1px solid #fff;
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+
+    li {
+      list-style: none;
+      margin: 0 10px;
+
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.two {
+  height: 80px;
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+
+    li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 20px;
+
+      i {
+        font-size: 25px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+
+      &.logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        img {
+          width: 50px;
+          margin-right: 8px;
+        }
+
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+.three {
+  width: 100%;
+  position: absolute;
+  bottom: 55px;
+  background-color: #ff8b8b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      margin-bottom: 20px;
+      width: 143px;
+    }
+    h1{
+      font-size: 50px;
+    }
+  }
+}
