@@ -36,6 +36,11 @@ body {
 .one ul li i {
   font-size: 25px;
 }
+.one ul li.login a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+}
 .two {
   height: 60px;
   top: 40px;

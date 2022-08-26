@@ -6,6 +6,11 @@ let antiShake = true
 
 
 window.addEventListener('load', () => {
+
+  
+
+
+
   let swiperWrapper = document.querySelector('.swiper-wrapper')
   let swiperSlide = document.querySelectorAll('.swiper-slide')
   let array = [swiperSlide[1], ...swiperSlide, swiperSlide[0]]

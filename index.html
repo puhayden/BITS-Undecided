@@ -30,6 +30,14 @@
       <li><i class="iconfont icon-shipin"></i></li>
       <li><i class="iconfont icon-twitch"></i></li>
       <li><i class="iconfont icon-douyin"></i></li>
+      <li class="login"><a id="name" href="views/Login.html">LOGIN</a></li>
+
+      <script>
+        let name = window.sessionStorage.getItem('name')
+        name = name?name:'LOGIN'
+        document.querySelector('#name').innerText = name
+        
+      </script>
     </ul>
   </div>
   <!-- 第二行 -->
