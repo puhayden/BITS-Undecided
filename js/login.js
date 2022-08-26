@@ -12,13 +12,13 @@
       if (userList[i].email == email.value) {
         if (userList[i].password == password.value) {
           sessionStorage.setItem('name', userList[i].first + userList[i].last)
-          alert('登录成功')
+          alert('Login successful')
           window.open('../index.html', '_self')
           return
         }
       }
     }
-    return alert('账号或密码错误')
+    return alert('Account number or Password wrong')
   })
 
 
