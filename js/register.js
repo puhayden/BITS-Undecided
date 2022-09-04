@@ -8,7 +8,10 @@
 
 
   submit.addEventListener('click', () => {
-    if (first.value == "" || last.value == "" || email.value == "" || password.value == "" || !choice.checked) return alert('必选项不能为空')
+    if (first.value == "" || last.value == "" || email.value == "" || password.value == "") return alert('必选项不能为空')
+
+    if(!judgeEmail(email.value)) return alert('请输入正确的邮箱地址')
+
 
     let userList = [{
       first: first.value,
@@ -19,7 +22,7 @@
 
     let user = JSON.parse(localStorage.getItem('user'))
     console.log(user)
-    if(user != null){
+    if (user != null) {
       userList.push(...user)
       console.log(userList)
     }
@@ -28,7 +31,7 @@
 
 
     alert('注册成功!')
-    window.open('Login.html','_self')
+    window.open('Login.html', '_self')
 
 
     first.value = ""
@@ -39,7 +42,14 @@
   })
 
 
+  // 判断是否是正确的邮箱地址
+  function judgeEmail(srt){
+    let reg = /^[a-zA-Z0-9]+([-_.][A-Za-zd]+)*@([a-zA-Z0-9]+[-.])+[A-Za-zd]{2,5}$/
+    return reg.test(srt)
+  }
 
 
-
+  document.querySelector('.logo').addEventListener('click', () => {
+    window.open('../index.html', '_self')
+  })
 })()

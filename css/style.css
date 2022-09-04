@@ -68,6 +68,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 }
 .two ul li.logo img {
   width: 40px;
@@ -78,7 +79,7 @@ body {
 }
 .three {
   width: 100%;
-  height: 165px;
+  height: 150px;
   position: absolute;
   bottom: 0px;
   background-color: #ff8b8b;
