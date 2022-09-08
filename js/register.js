@@ -8,9 +8,9 @@
 
 
   submit.addEventListener('click', () => {
-    if (first.value == "" || last.value == "" || email.value == "" || password.value == "") return alert('必选项不能为空')
+    if (first.value == "" || last.value == "" || email.value == "" || password.value == "") return alert('Required option cannot be empty')
 
-    if(!judgeEmail(email.value)) return alert('请输入正确的邮箱地址')
+    if(!judgeEmail(email.value)) return alert('Please enter the correct email address')
 
 
     let userList = [{
@@ -30,7 +30,7 @@
     localStorage.setItem('user', JSON.stringify(userList))
 
 
-    alert('注册成功!')
+    alert('Registration successful!')
     window.open('Login.html', '_self')
 
 
