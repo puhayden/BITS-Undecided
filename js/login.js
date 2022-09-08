@@ -4,9 +4,9 @@
   const submit = document.querySelector('#submit')
 
   submit.addEventListener('click', () => {
-    if (email.value == "" || password == "") return alert('必选项不能为空')
+    if (email.value == "" || password == "") return alert('Required option cannot be empty')
 
-    if(!judgeEmail(email.value)) return alert('请输入正确的邮箱地址')
+    if(!judgeEmail(email.value)) return alert('Please enter the correct email address')
 
     let userList = JSON.parse(localStorage.getItem('user'))
 
@@ -14,13 +14,13 @@
       if (userList[i].email == email.value) {
         if (userList[i].password == password.value) {
           sessionStorage.setItem('name', userList[i].first + userList[i].last)
-          alert('登录成功')
+          alert('Login successful')
           window.open('../index.html', '_self')
           return
         }
       }
     }
-    return alert('账号或密码错误')
+    return alert('Wrong account or password')
   })
 
 
