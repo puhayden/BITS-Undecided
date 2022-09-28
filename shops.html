@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./css/lb.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    html,
+    body {
+      min-width: 1200px;
+    }
+  </style>
+
+
+  <script src="./js/mian.js"></script>
+</head>
+
+<body>
+
+  <!-- 第一行 -->
+  <div class="one">
+    <ul>
+      <li><a href="https://twitter.com/esportundecided" target="_blank"><i class="iconfont icon-twitter"></i></a></li>
+      <li><a href="https://www.youtube.com/channel/UChwQpmALFaQEfXINdYph-lg" target="_blank"><i class="iconfont icon-shipin"></i></a></li>
+      <li><a href="https://www.twitch.tv/undecidedesports" target="_blank"><i class="iconfont icon-twitch"></i></a></li>
+      <li><a href="https://www.tiktok.com/@undecidedesports1?lang=en" target="_blank"><i class="iconfont icon-douyin"></i></a></li>
+      <li class="login"><a id="name" href="views/Login.html">LOGIN</a></li>
+
+      <script>
+        let name = window.sessionStorage.getItem('name')
+        name = name?name:'LOGIN'
+        document.querySelector('#name').innerText = name
+        
+      </script>
+    </ul>
+  </div>
+  <!-- 第二行 -->
+  <div class="two">
+    <ul>
+      <li class="logo">
+        <img src="./img/logo.png" alt="">
+        <a href="index.html"><h1>UNDECIDED E-SPORTS</h1></a>
+      </li>
+      <li>
+        <!-- <i class="iconfont icon-youxi"></i> -->
+        <a href="teams.html"><span>Teams</span></a>
+      </li>
+      <li>
+        <!-- <i class="iconfont icon-news"></i> -->
+        <a href="news.html"><span>News</span></a>
+      </li>
+      <li>
+        <!-- <i class="iconfont icon-yonghu"></i> -->
+        <a href="partners.html"><span>Partners</span></a>
+      </li>
+      <li>
+        <!-- <i class="iconfont icon-gouwu"></i> -->
+        <a href="shops.html"><span>Shops</span></a>
+      </li>
+      <li>
+        <a href="aboutus.html"><span>About Us</span></a>
+      </li>
+      <li>
+        <a href="liveNow.html"><span>Live</span></a>
+      </li>
+    </ul>
+  </div>
+
+ 
+  <div class="three">
+    <div>
+      <img src="./img/logo.png" alt="">
+      <h1>UNDECIDED E-SPORTS</h1>
+    </div>
+  </div>
+</body>
+
+</html>
