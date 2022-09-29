@@ -9,18 +9,23 @@ body {
   min-height: 100vh;
   background-color: #ff8b8b;
 }
-.one,
+.headerdiv{
+  display: flex;
+  flex-direction: column;
+}
+
 .two {
   width: 100%;
-  background-color: #000000;
+  background: black;
   color: #fff;
-  position: fixed;
-  top: 0;
   z-index: 9;
+  flex:1;
 }
 .one {
   height: 40px;
+  flex: 1;
   border-bottom: 0.1px solid #fff;
+  background: black;
 }
 .one ul {
   height: 100%;
@@ -41,10 +46,7 @@ body {
   text-decoration: none;
   font-size: 22px;
 }
-.two {
-  height: 60px;
-  top: 40px;
-}
+
 .two ul {
   height: 100%;
   display: flex;
@@ -387,4 +389,13 @@ body {
   margin: 0 auto;
   width: 30%; /* Change this to whatever width you want. */
   padding-top: 10px; /* This creates some space between the element and the border */
+}
+
+.tablePartner{
+  table-layout: auto;
+  width: 100%; 
+}
+.tablePartner img{
+  height: 250px;
+  width: 250px;
 }
