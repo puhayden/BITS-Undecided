@@ -93,6 +93,7 @@ body {
   z-index: 9;
 }
 
+
 .threeaboutus {
     width: 100%;
     height: 150px;
@@ -141,6 +142,26 @@ body {
   padding-top: 100px;
   height: 100vh;
   background: url(../img/ba.webp) no-repeat center -50px;
+  background-size: cover;
+  position: relative;
+}
+.contentNews {
+  width: 100%;
+  height: 500px;
+  min-height: 100%;
+  padding-top: 100px;
+  height: 100vh;
+  background: url(../img/neon4k.jpg) no-repeat center -50px;
+  background-size: cover;
+  position: relative;
+}
+.contentLive {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding-top: 100px;
+  height: 100vh;
+  background: url(../img/valwallpaper.png) no-repeat center -50px;
   background-size: cover;
   position: relative;
 }
@@ -398,4 +419,8 @@ body {
 .tablePartner img{
   height: 250px;
   width: 250px;
+}
+.twtEmbed{
+  margin-top: 20px;
+  margin-left: 5%;
 }

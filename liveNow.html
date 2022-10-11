@@ -45,7 +45,8 @@
     <ul>
       <li class="logo">
         <img src="./img/logo.png" alt="">
-        <h1>UNDECIDED E-SPORTS</h1>
+        <a href="index.html"><h1>UNDECIDED E-SPORTS</h1></a>
+        
       </li>
       <li>
         <!-- <i class="iconfont icon-youxi"></i> -->
@@ -75,16 +76,20 @@
   <style> 
     iframe{
       width: 70%;
-      border: 2px solid #ccc;
+      border: 2px solid rgb(0, 0, 0);
     }
   </style>
-  
+
+
 <!-- Twitch embed -->
-<div id = twitchEmbed, style="margin-top: 5%;">
-<center>
-<iframe src="https://player.twitch.tv/?channel=undecidedesports&parent=puhayden.github.io" frameborder="0" allowfullscreen="true" muted="false" scrolling="no" height="1080" width="2080" id="myIframe"></iframe>
-</center>
+<div class="contentLive">
+  <div id = twitchEmbed, style="margin-top: 20px;">
+  <center>
+  <iframe src="https://player.twitch.tv/?channel=undecidedesports&parent=puhayden.github.io" frameborder="0" allowfullscreen="true" muted="false" scrolling="no" height="1080" width="2080" id="myIframe"></iframe>
+  </center>
+  </div>
 </div>
+
 <script> 
 var iframe = document.getElementById("myIframe");
 iframe.onload = function(){
