@@ -188,7 +188,7 @@ body {
   background-size: cover;
   background-repeat: repeat-y;
   position: relative;
-  max-width: 1080px;
+  max-width: 1480px;
 }
 
 .content::after {
@@ -471,7 +471,7 @@ body {
   background-size: cover;
   background-repeat: repeat-y;
   position: relative;
-  max-width: 1080px;
+  max-width: 1480px;
  
 }
 .teamheading {
